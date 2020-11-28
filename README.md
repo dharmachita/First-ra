@@ -1,8 +1,9 @@
 # E-Commerce en React
 
-~~~
-Proyecto para crear un E-commerce basado en *React.js* para el curso de *Coder House*
-~~~
+Proyecto para crear un E-commerce basado en **React.js** para el curso de **Coder House**
 
+~~~
+Autor: Mauro Emmanuel Rambo
+~~~
 
 
