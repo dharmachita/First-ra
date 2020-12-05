@@ -1,0 +1,23 @@
+{
+    "paletaColores":[{
+            "nombreColor":"neutro",
+            "valorHexadec":"#BFB999"
+        },
+        {
+            "nombreColor":"dark",
+            "valorHexadec":"#402719"
+        },
+        {
+            "nombreColor":"light",
+            "valorHexadec":"#D93D04"
+        },
+        {
+            "nombreColor":"medium1",
+            "valorHexadec":"#D91604"
+        },
+        {
+            "nombreColor":"medium2",
+            "valorHexadec":"#8C0303"
+        }
+    ]
+}
