@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+
+:root{
+  --neutral:grey;
+  --dark:black;
+  --light1:red;
+  --light2:pink;
+  --medium:brown;
+}
 
 .App-logo {
   height: 40vmin;
@@ -28,12 +37,6 @@
 .left-logo{
   text-align: left;
   margin-left: 1em;
-}
-
-.letra-cool{
-  font-family: Yellowtail,Verdana, Geneva, Tahoma, sans-serif;
-  font-size: calc(50px + 2vmin);
-  padding: 5px;
 }
 
 @keyframes App-logo-spin {

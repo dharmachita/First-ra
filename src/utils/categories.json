@@ -1,0 +1,22 @@
+[
+    {
+        "cat":"Accesorios",
+        "url":"#",
+        "icon":"BeachAccess"
+    },
+    {
+        "cat":"Deco",
+        "url":"#",
+        "icon":"House"
+    },
+    {
+        "cat":"Regalos",
+        "url":"#",
+        "icon":"CardGiftcard"
+    },
+    {
+        "cat":"Autor",
+        "url":"#",
+        "icon":"Palette"
+    }
+]

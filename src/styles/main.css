@@ -1,0 +1,33 @@
+.neutral{
+    background-color: var(--neutral);
+}
+.dark{
+    background-color: var(--dark);
+}
+.light1{
+    background-color: var(--light1);
+}
+.light2{
+    background-color: var(--light2);
+}
+.medium{
+    text-align: center;
+    background-color: var(--dark);
+    flex-grow: 1;
+    padding:0% 2% 0% 2%;
+    color:var(--neutral);
+}
+  
+.logo-bar{
+    font-size: calc(50px + 2vmin);
+    padding: 5px;
+    font-family: 'Lovers Quarrel', cursive;
+    text-align: center;
+    background-color: var(--light1);
+    color:white;
+}
+
+body{
+    background-color: var(--neutral);
+}
+  

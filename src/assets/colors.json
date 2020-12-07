@@ -1,23 +1,21 @@
-{
-    "paletaColores":[{
-            "nombreColor":"neutro",
-            "valorHexadec":"#BFB999"
+[       {  
+            "name":"neutral",
+            "value":"#BFB999"
         },
         {
-            "nombreColor":"dark",
-            "valorHexadec":"#402719"
+            "name":"dark",
+            "value":"#402719"
         },
         {
-            "nombreColor":"light",
-            "valorHexadec":"#D93D04"
+            "name":"light1",
+            "value":"#D93D04"
         },
         {
-            "nombreColor":"medium1",
-            "valorHexadec":"#D91604"
+            "name":"light2",
+            "value":"#D91604"
         },
         {
-            "nombreColor":"medium2",
-            "valorHexadec":"#8C0303"
+            "name":"medium",
+            "value":"#8C0303"
         }
-    ]
-}
+]
