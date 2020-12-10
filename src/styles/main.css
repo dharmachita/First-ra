@@ -10,24 +10,52 @@
 .light2{
     background-color: var(--light2);
 }
+
 .medium{
+    align-content: center;
     text-align: center;
     background-color: var(--dark);
     flex-grow: 1;
-    padding:0% 2% 0% 2%;
     color:var(--neutral);
+    padding: 7px;
 }
   
 .logo-bar{
-    font-size: calc(50px + 2vmin);
-    padding: 5px;
-    font-family: 'Lovers Quarrel', cursive;
-    text-align: center;
     background-color: var(--light1);
     color:white;
+    align-items: center;
+}
+.logo-center{
+    text-align: center;
+    font-size: calc(50px + 2vmin);
+    font-family: 'Lovers Quarrel', cursive;
 }
 
 body{
     background-color: var(--neutral);
 }
-  
+
+.cart-bar{
+    text-align: right;
+    margin: 10em;
+    padding-right: 2%;
+}
+
+.cat-item{
+    text-decoration: none;
+    color: var(--neutral);
+    align-content: center;
+}
+
+.main-content{
+    padding-top: 10%;
+    align-items: center;
+    text-align: center;
+}
+
+
+.navbar{
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 
+    0px 4px 5px 0px rgba(0,0,0,0.14), 
+    0px 1px 10px 0px rgba(0,0,0,0.12);
+}
