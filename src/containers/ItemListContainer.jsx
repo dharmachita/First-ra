@@ -26,6 +26,7 @@ export default function SpacingGrid() {
                 img={producto.url}
                 price={producto.precio}
                 alt={producto.alt} 
+                stock={producto.stock}
             />
           ))}
         </Grid>
