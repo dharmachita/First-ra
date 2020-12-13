@@ -11,14 +11,16 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default function AddRemoveButton(props){
-    const [count, setCount] = useState(parseInt(props.init));
+    const {stock, init} = props;
+    const [count, setCount] = useState(parseInt(init));
     const classes = useStyles();
+
 
     return(
     <>
-        <button onClick={()=>setCount(count>1?count-1:count)}>-</button>
+        <button disabled={count === parseInt(init)} onClick={()=>setCount(count>1?count-1:count)}>-</button>
         <div className={classes.counter}>{count}</div>
-        <button onClick={()=>setCount(count<props.stock?count+1:count)}>+</button>
+        <button disabled={count === stock} onClick={()=>setCount(count<stock?count+1:count)}>+</button>
     </>
     )
 }
