@@ -1,0 +1,26 @@
+[
+    {
+        "titulo":"Cuaderno",
+        "url":"https://via.placeholder.com/150.png",
+        "precio":"$250",
+        "alt":"descripción"
+    },
+    {
+        "titulo":"Hornito",
+        "url":"https://via.placeholder.com/150.png",
+        "precio":"$400",
+        "alt":"descripción"
+    },
+    {
+        "titulo":"Cuadro",
+        "url":"https://via.placeholder.com/150.png",
+        "precio":"$380",
+        "alt":"descripción"
+    },
+    {
+        "titulo":"Colgante",
+        "url":"https://via.placeholder.com/150.png",
+        "precio":"$110",
+        "alt":"descripción"
+    }
+]

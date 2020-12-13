@@ -3,13 +3,12 @@ import CartIcon from '@material-ui/icons/ShoppingCart';
 
 
 export default function ShoppingCart(){
-    
     return(
         <>
             <Fab
                 size="small"
             >
-                <CartIcon />
+                <CartIcon /><span>0</span>
             </Fab>
         </>
     )

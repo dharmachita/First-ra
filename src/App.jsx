@@ -2,7 +2,7 @@ import './App.css';
 import './styles/main.css';
 import NavBar from './global/NavBar';
 import palette from './assets/colors.json';
-import ItemListContainer from './components/ItemListContainer';
+import ItemListContainer from './containers/ItemListContainer';
 
 function App() {
   const root = document.documentElement;
@@ -12,11 +12,11 @@ function App() {
   
   return (
     <>
-      <header className="navbar"> 
-          <NavBar /> 
+      <header className="shadow"> 
+        <NavBar /> 
       </header>
-      <main className="main-content">
-        <ItemListContainer/>
+      <main className="main-content shadow">
+        <ItemListContainer />
       </main>
     </>
   );

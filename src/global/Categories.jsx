@@ -1,7 +1,6 @@
 import categories from '../utils/categories.json';
 import '../styles/main.css';
-import Grid from '@material-ui/core/Grid'; 
-import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 
 
 export default function Categories(){
