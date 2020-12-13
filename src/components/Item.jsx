@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
   }));
   
 export default function Item(props){
+    const {title,img,price,stock,alt} = props;
     const classes = useStyles();
     var initVal;
     var buttonText;
@@ -36,10 +37,10 @@ export default function Item(props){
         <>
             <Grid item>
               <Paper className={classes.color}>
-                    <div><h2>{props.title}</h2></div>
-                    <div><img src={props.img} alt={props.alt} /></div>
-                    <div><b>Precio:</b><span> {props.price}</span></div>
-                    <div className={classes.mar}><ItemCount stock={props.stock} init={initVal} /></div>
+                    <div><h2>{title}</h2></div>
+                    <div><img src={img} alt={alt} /></div>
+                    <div><b>Precio:</b><span> {price}</span></div>
+                    <div className={classes.mar}><ItemCount stock={stock} init={initVal} /></div>
                     <div><Button disabled={disabledC} variant="outlined" color="secondary" size="small">
                     <AddShoppingCartIcon />{buttonText}</Button>
                     </div>
