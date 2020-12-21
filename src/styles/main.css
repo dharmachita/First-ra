@@ -67,3 +67,7 @@ body{
     background-color: white;
     width: 200px;
 }
+
+.loader{
+    margin-top: 3rem;
+}
