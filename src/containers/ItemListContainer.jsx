@@ -18,13 +18,14 @@ const useStyles = makeStyles((theme) => ({
 export default function ItemListContainer() {
   const classes = useStyles();
   const [productos,setProductos] = useState([]);
+  const [error,setError] = useState();
 
 
-  //Emulación de busqueda de datos en API
+  //Emulación de búsqueda de datos en API
   const buscarEnApi = new Promise((resolve,reject)=>{
-      setTimeout(()=>{
-        resolve(api);
-      },2000)
+    setTimeout(()=>{
+      true?resolve(api):reject("Error 500");
+    }, 2000)
   })
 
   //Función asíncrona para capturar la llamada a la API 
@@ -34,9 +35,9 @@ export default function ItemListContainer() {
     try{
       const result = await buscarEnApi;
       setProductos(result);
-      console.log(productos);
     }catch(err){
-      console.log(err);
+      console.error(err);
+      setError("Lo sentimos, no hemos podido cargar los productos :( ");
     }
   }
   */
@@ -48,8 +49,9 @@ export default function ItemListContainer() {
     .then(result=>{
       setProductos(result);
     })
-    .catch(err=>{
+    .catch((err)=>{
       console.error(err);
+      setError("Lo sentimos, no hemos podido cargar los productos :( ");
     })
     //getProducto();
     //eslint-disable-next-line react-hooks/exhaustive-deps
@@ -61,18 +63,20 @@ export default function ItemListContainer() {
     <Grid container className={classes.root} spacing={2}>
       <Grid item xs={12}>
         <Grid container justify="center" spacing={4}>
-          { !productos.length?
-            <CircularProgress className="loader" color="secondary" />:             
-            productos.map((producto, index) => (
-              <Item 
-                  key={index}
-                  title={producto.titulo}
-                  img={producto.url}
-                  price={producto.precio}
-                  alt={producto.alt} 
-                  stock={producto.stock}
-              />
-            ))
+          {
+            error?<h3>{error}</h3>:
+              (!productos.length?
+              <CircularProgress className="loader" color="secondary" />:             
+              productos.map((producto, index) => (
+                <Item 
+                    key={index}
+                    title={producto.titulo}
+                    img={producto.url}
+                    price={producto.precio}
+                    alt={producto.alt} 
+                    stock={producto.stock}
+                />
+              )))
           }
         </Grid>
       </Grid>
