@@ -3,6 +3,7 @@ import './styles/main.css';
 import NavBar from './global/NavBar';
 import palette from './assets/colors.json';
 import ItemListContainer from './containers/ItemListContainer';
+import ItemDetailContainer from './containers/ItemDetailContainer';
 
 function App() {
   const root = document.documentElement;
@@ -16,7 +17,8 @@ function App() {
         <NavBar /> 
       </header>
       <main className="main-content shadow">
-        <ItemListContainer />
+        {/*<ItemListContainer />*/}
+        <ItemDetailContainer prodId="1"/>
       </main>
     </>
   );

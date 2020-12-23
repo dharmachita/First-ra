@@ -71,3 +71,22 @@ body{
 .loader{
     margin-top: 3rem;
 }
+
+.cont-desc{
+    align-items: center;
+    align-content: center;
+}
+
+.cont-img{
+    align-items: center;
+    align-content: center;
+}
+
+.price{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.button-desc{
+    margin-top: 2rem;
+}
